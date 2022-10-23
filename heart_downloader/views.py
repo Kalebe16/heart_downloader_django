@@ -46,11 +46,14 @@ def mp3(request):
 
     if request.method == 'GET':
 
-        file_mp4 = video.streams.get_audio_only().download(skip_existing=True)
+        filename = video.title
+        filename.replace(",", "")
+
+        file_mp4 = video.streams.get_audio_only().download(filename=filename)
         base, ext = os.path.splitext(file_mp4)
         my_mp3 = base + '.mp3'
         os.rename(file_mp4, my_mp3)
-        name_file = titulo_video + ".mp3"
+        name_file = filename + ".mp3"
         return FileResponse(open(name_file, 'rb'), as_attachment=True)
 
 
