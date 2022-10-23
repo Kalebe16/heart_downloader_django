@@ -1,0 +1,45 @@
+{% include 'partials/head.html' %}
+
+
+<body class="bg-light">
+
+    {% include 'partials/header.html' %}
+
+
+    <!-- Tag principal da pagina ---------------------------------------------------------->
+    <main class="container pt-5">
+        <div class="row text-center">
+            <div class="col">
+                <h2 class="text-dark"> {{titulo_video }}</h2>
+                
+            </div>
+        </div>
+        <div class="row text-center pt-3">
+            <div class="col ">
+                <img class="img-fluid img-thumbnail  pt-3" src="{{thumbnail_video}}" alt="thumbnail_video" width="400">
+            </div>
+        </div>
+        <div class="row text-center pt-5 ">
+            <div class="col ">
+                <form action="{% url 'mp4' %}" method="get">
+                <button type="submit" class="btn btn-danger mb-2" name="mp4">Baixar mp4</button>
+                </form>
+                <br>
+                <form action="{% url 'mp3' %}" method="get">
+                <button type="submit" class="btn btn-danger" name="mp3">Baixar mp3</button> 
+                </form>
+            </div>
+        </div>
+
+        
+    </main>
+    <!-- ------------------------------------------------------------------------------   -->
+
+    
+    
+
+    {% include 'partials/imports.html' %}
+
+</body>
+
+</html>
