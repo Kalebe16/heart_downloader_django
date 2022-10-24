@@ -45,14 +45,24 @@ def mp3(request):
     remove_files()
 
     if request.method == 'GET':
+        
+        titulo_video = video.title
+        titulo_filtrado = ''.join(filter(str.isalnum, titulo_video)) 
+        filename_mp4 = titulo_filtrado + ".mp4"
+        filename_mp3 = titulo_filtrado + ".mp3"
 
-        filename = video.title
-        file_mp4 = video.streams.get_audio_only().download(filename=filename)
-        base, ext = os.path.splitext(file_mp4)
+        my_mp4 = video.streams.get_audio_only().download(filename=filename_mp3)
+        base, ext = os.path.splitext(my_mp4)
         my_mp3 = base + '.mp3'
-        os.rename(file_mp4, my_mp3)
-        name_file = filename + ".mp3"
-        return FileResponse(open(name_file, 'rb'), as_attachment=True)
+        os.rename(my_mp4, my_mp3)
+
+        #filename = video.title
+        #file_mp4 = video.streams.get_audio_only().download(filename=filename)
+        #base, ext = os.path.splitext(file_mp4)
+        #my_mp3 = base + '.mp3'
+        #os.rename(file_mp4, my_mp3)
+        #name_file = filename + ".mp3"
+        return FileResponse(open(filename_mp3, 'rb'), as_attachment=True)
 
 
 # ------- FUNÇÕES AUXILIARES -------------------------
