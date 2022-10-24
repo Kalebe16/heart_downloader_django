@@ -15,13 +15,13 @@
                 <form method="POST" action="{% url 'download' %}">
                     {% csrf_token %}
                     <div class="mb-3 ">
-                        <label for="exampleInputEmail1" class="form-label text-dark ">Cole o link do Youtube aqui:</label>
+                        <label for="exampleInputEmail1" class="form-label text-dark">Cole o link do Youtube aqui:</label>
                         <input type="url" class="form-control text-dark " id="exampleInputEmail1"
                             aria-describedby="emailHelp" autocomplete="off" required="on" autofocus="on" name="link" >
                     </div>
                     <div class="row">
                         <div class="col text-center">
-                            <button type="submit" class="btn btn-danger ">Baixar</button>
+                            <button type="submit" class="btn btn-danger">Baixar</button>
                         </div>
                     </div>
                 </form>
