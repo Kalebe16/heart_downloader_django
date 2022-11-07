@@ -1,0 +1,29 @@
+# heart_downloader_django
+
+<h1 align="center">❤Heart Downloader❤</h1>
+<p><strong>- Aplicação web criada utilizando Python, Django e Bootstrap que faz o download de videos do youtube no formato mp4 ou mp3</strong></p>
+<p><strong>- Youtube downloader completo e gratuito!</strong></p>
+
+
+
+<h3>Pré requisitos:</h3>
+<p><strong>Ter o Python instalado.</strong></p>
+<hr>
+
+<h3>Para testar o código</h3>
+<p><strong>1- git clone https://github.com/Kalebe16/heart_downloader_django.git</strong></p>
+<p><strong>2- pip install -r requirements.txt</strong></p>
+<p><strong>3- python manage.py runserver</strong></p>
+<hr>
+
+<h1 align="center">Cole o link do video</h1>
+<div align="center"><img width=800 src="https://lh3.googleusercontent.com/fPyNfnWJfAovhzghk6CR1wz03cCQLIVpqSC2OkTC5YzaD8mB0o_itLudVqeyZQj9uq8lwV5bUX0xk0SO7nVZS36R84NxzyQktRdtr9VHkHJpEo8wyeFGV7rYm7DlkamMWW8bS4b8DO8mLON32ZfQr--JYQc8c6BjXtjd8JrEMjUWHePo3yNE1mNGdLfZlE45cIdah_6f_hIDDyZ0HzMYOcQGq5lNWpjW5vBPb6gAAH1w7aH0oovR07QWHIrdxvcA1fBkNy8oH4GAaNdapIv3g71FKqcgmy4LmBf6c9az_Pu09HChS3_PmflTy6FK1jr9QGwUvwperYt08wudTftlTiULxfFkRReJZ0UOBnH611uGKd6pBZXAoLFqoxfBk3N_jd65KVgXyyoship8nSvJnrXj7_A7umMqC0hJyxgJRK3cWGiMUtJ-7dRjkjpzfGOhI2yjFSI7niOhyD6BMCwR-bVA0UtGT18TQORaShgc5p66Uxws55Iwfct6zSKtuXcKkzp5rI26pNV7xjmeS3FGr8avh8IN4aY5K8QI_qzSO4m6cE1Ss4_LA61TOJRUZfBuUOS5HFcPJeaJfrBgTv7UcAB0Jc8UJHQibzNB8BELtgCvqUaTa9D86YKglfCfie6cmg8PbMalQO7N1W5jXwnqDo3nA7fLaD7uQ9o32vYlF-FE9ddsptVK1NtKoK2heQrZUvgCXJjZeM3Ibb92Qkt37mA8a7_I7md1gEpaAsdC8s1t3XU_U7bn4XyDh_JayY9lunTQ_VO4s4bj51_QqFgbYDsCRZ4WaVmNQ8h3aj4TFmIkVn3LWBFZEiIAbDmBGt3n46VBr7754CC-ldbkwLUk1XQf2CdFVS1QCd7M4tXEthwZ0rQupG_XKEDTZJBnQ_-RVXVaUpS2sohKwTH6gDEi6UOJP_VIZ5Yb2oVzQrJKZkf2=w1690-h898-no?authuser=0"></div>
+<hr>
+
+<h1 align="center">Escolha entre mp3 e mp4</h1>
+<div align="center"><img width=800 src="https://lh3.googleusercontent.com/fPyNfnWJfAovhzghk6CR1wz03cCQLIVpqSC2OkTC5YzaD8mB0o_itLudVqeyZQj9uq8lwV5bUX0xk0SO7nVZS36R84NxzyQktRdtr9VHkHJpEo8wyeFGV7rYm7DlkamMWW8bS4b8DO8mLON32ZfQr--JYQc8c6BjXtjd8JrEMjUWHePo3yNE1mNGdLfZlE45cIdah_6f_hIDDyZ0HzMYOcQGq5lNWpjW5vBPb6gAAH1w7aH0oovR07QWHIrdxvcA1fBkNy8oH4GAaNdapIv3g71FKqcgmy4LmBf6c9az_Pu09HChS3_PmflTy6FK1jr9QGwUvwperYt08wudTftlTiULxfFkRReJZ0UOBnH611uGKd6pBZXAoLFqoxfBk3N_jd65KVgXyyoship8nSvJnrXj7_A7umMqC0hJyxgJRK3cWGiMUtJ-7dRjkjpzfGOhI2yjFSI7niOhyD6BMCwR-bVA0UtGT18TQORaShgc5p66Uxws55Iwfct6zSKtuXcKkzp5rI26pNV7xjmeS3FGr8avh8IN4aY5K8QI_qzSO4m6cE1Ss4_LA61TOJRUZfBuUOS5HFcPJeaJfrBgTv7UcAB0Jc8UJHQibzNB8BELtgCvqUaTa9D86YKglfCfie6cmg8PbMalQO7N1W5jXwnqDo3nA7fLaD7uQ9o32vYlF-FE9ddsptVK1NtKoK2heQrZUvgCXJjZeM3Ibb92Qkt37mA8a7_I7md1gEpaAsdC8s1t3XU_U7bn4XyDh_JayY9lunTQ_VO4s4bj51_QqFgbYDsCRZ4WaVmNQ8h3aj4TFmIkVn3LWBFZEiIAbDmBGt3n46VBr7754CC-ldbkwLUk1XQf2CdFVS1QCd7M4tXEthwZ0rQupG_XKEDTZJBnQ_-RVXVaUpS2sohKwTH6gDEi6UOJP_VIZ5Yb2oVzQrJKZkf2=w1690-h898-no?authuser=0"</div>
+<hr>
+
+
+
+
